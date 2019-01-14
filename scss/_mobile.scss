@@ -44,6 +44,10 @@
 			height: 150px;
 		}
 	}
+	.about-info {
+		grid-template-areas: 'bioimg' 'bio' 'job1' 'job2' 'job3';
+		grid-auto-columns: 1fr;
+	}
 }
 
 //Smartphons
