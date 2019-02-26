@@ -9,7 +9,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: #000;
     transition: all 0.5s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
@@ -24,7 +24,6 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
   visibility: hidden; }
   .menu.show {
     visibility: visible; }
@@ -41,13 +40,13 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    background: #373737;
+    background: rgba(192, 162, 135, 0.9);
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #444;
+    background: rgba(201, 175, 152, 0.9);
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
@@ -55,16 +54,16 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url("/dist/image/portrait.jpg");
+      background: url("/dist/image/coding_female_1.jpg");
       border-radius: 50%;
-      border: solid 3px #eece1a; }
+      border: solid 3px #3a4660; }
   .menu .nav-items {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
     .menu .nav-items.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-items.current > a {
-      color: #eece1a; }
+      color: #3a4660; }
   .menu .nav-link {
     text-transform: uppercase;
     display: inline-block;
@@ -72,11 +71,11 @@
     font-size: 25px;
     padding: 1rem 0;
     font-weight: 300;
-    color: #fff;
+    color: #000;
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #eece1a; }
+      color: #3a4660; }
 
 .nav-items:nth-child(1) {
   transition-delay: 0.1s; }
@@ -94,11 +93,11 @@
   box-sizing: border-box; }
 
 body {
-  background: #444;
-  color: #fff;
+  background: #c9af98;
+  color: #000;
   height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Spectral', serif;
   line-height: 1.5; }
   body#bg-img {
     background: url(/dist/image/background.jpg);
@@ -112,7 +111,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(68, 68, 68, 0.9); }
+      background: rgba(201, 175, 152, 0.9); }
 
 h1,
 h2,
@@ -128,7 +127,7 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(73, 73, 73, 0.5);
+    background: rgba(205, 180, 159, 0.5);
     font-size: 1.3rem; }
 
 a {
@@ -141,7 +140,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #eece1a; }
+  color: #3a4660; }
 
 main {
   padding: 4rem;
@@ -151,7 +150,7 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #eece1a;
+        color: #3a4660;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
@@ -168,7 +167,7 @@ main {
   grid-area: bioimg;
   margin: auto;
   border-radius: 50%;
-  border: #eece1a 3px solid; }
+  border: #3a4660 3px solid; }
 
 .bio {
   grid-area: bio;
@@ -184,9 +183,9 @@ main {
   grid-area: job3; }
 
 .job {
-  background: #515151;
+  background: #d2bca9;
   padding: 0.5rem;
-  border-bottom: #eece1a solid 5px; }
+  border-bottom: #3a4660 solid 5px; }
 
 .projects {
   display: grid;
@@ -194,10 +193,10 @@ main {
   grid-template-columns: repeat(3, 1fr); }
   .projects img {
     width: 100%;
-    border: 3px #fff solid; }
+    border: 3px #251f86 solid; }
     .projects img:hover {
       opacity: 0.5;
-      border-color: #eece1a;
+      border-color: #3a4660;
       transition: all 0.5s ease-out; }
 
 .boxes {
@@ -208,16 +207,16 @@ main {
   margin-top: 1rem; }
   .boxes div {
     font-size: 2rem;
-    border: 3px #fff solid;
+    border: 3px #000 solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
     transition: all 0.5s ease-out; }
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
-      background: #eece1a;
-      color: #000; }
+      background: #3a4660;
+      color: #fff; }
       .boxes div:hover span {
-        color: #000; }
+        color: #fff; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -225,22 +224,22 @@ main {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #eece1a;
-    color: #000; }
+    background: #3a4660;
+    color: #fff; }
 
 .btn-dark {
-  background: black;
+  background: #403022;
   color: #fff; }
 
 .btn-light {
-  background: #c4c4c4;
+  background: white;
   color: #333; }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #2b2b2b;
-  color: #fff;
+  background: #b79577;
+  color: #000;
   height: 60px; }
 
 @media screen and (min-width: 1171px) {
@@ -274,7 +273,7 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url(/dist/image/portrait_small.jpg);
+      background: url(/dist/image/coding_female_small.jpg);
       width: 150px;
       height: 150px; }
   .about-info {

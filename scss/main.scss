@@ -10,7 +10,8 @@ body {
 	color: set-text-color($primary-color);
 	height: 100%;
 	margin: 0;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	//font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: 'Spectral', serif;
 	line-height: 1.5;
 }
 
@@ -106,7 +107,7 @@ main {
 
 	img {
 		width: 100%;
-		border: 3px #fff solid;
+		border: 3px rgb(37, 31, 134) solid;
 
 		&:hover {
 			opacity: 0.5;
@@ -116,7 +117,7 @@ main {
 	}
 }
 
-//Conact Page
+//Contact Page
 .boxes {
 	display: flex;
 	flex-wrap: wrap;
@@ -126,7 +127,7 @@ main {
 
 	div {
 		font-size: 2rem;
-		border: 3px #fff solid;
+		border: 3px #000 solid;
 		padding: 1.5rem 2.5rem;
 		margin-bottom: 3rem;
 		@include easeOut;
